@@ -1,0 +1,261 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home page</title>
+    <meta name="description" content="[Website for sale of noodle ramen]">
+    <meta name="author" content="[Ryan]">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Solway">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald&display=swap"> 
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nova+Oval&display=swap"> 
+  </head>
+  <body>
+    <header class="page-header">
+      <a href="index.html" class="logo"><img src="Logo Main.png" alt="SiteLogo" class="center">
+
+      <!-- Navigation menu and toggle button (non-functional) -->
+      <nav aria-label="Primary" class="navigation">
+        <ul class="flex-container">
+          <span><a href="#">Shop</a> <span><a href="#">Wet Noodles</a></span> <span><a href="#">Dry Noodles</a></span> <a href="#">About</a></span> <span><a href="#">Contact</a></span>
+            <ul class="submenu">
+            </ul>
+          </span>
+        </ul>
+      </nav>
+
+      <!-- Search for a product (non-functional) -->
+      <ul class="flex-container">
+        <label>Search
+          <input type="search" name="find" id="find">
+        </label>
+        <button type="button"><img src="img/Icons/Searc hbar.png" width ="30" height="20" alt="AddToCard"></button>
+        <span><a href="#"><img src="img/Icons/Heart.png" width ="40" height="30" alt="AddToCard"></a></span>
+        <span><a href="#"><img src="img/Icons/Shopping cart.png" width ="50" height="40" alt="AddToCard"></a></span>
+      </ul>
+    </header>
+
+    <main class="products">
+      <header class="heading">
+        <h1>Sale on Noodles!</h1>
+      </header>
+
+      <!-- Filtering product form -->
+      <form class="filters">
+        <h2>Filters</h2>
+
+        <div class="filter-options">
+          <fieldset>
+            <legend>Spicyness level</legend>
+            <ul class="filter-list">
+              <li><input type="checkbox" name="Spicyness level" value="Very mild" id="Very mild"> <label for="Very mild">Very mild</label></li>
+              <li><input type="checkbox" name="Spicyness level" value="Mild" id="Mild"> <label for="Mild">Mild</label></li>
+              <li><input type="checkbox" name="Spicyness level" value="Spicy" id="Spicy"> <label for="Spicy">Spicy</label></li>
+              <li><input type="checkbox" name="Spicyness level" value="Very Spicy" id="Very Spicy"> <label for="Very Spicy">Very Spicy</label></li>
+            </ul>
+          </fieldset>
+          <fieldset>
+            <legend>Price Range</legend>
+            <ol class="filter-list">
+              <li><input type="checkbox" name="Price Range" value="$" id="$"> <label for="$">$</label></li>
+              <li><input type="checkbox" name="Price Range" value="$$" id="$$"> <label for="$$">$$</label></li>
+              <li><input type="checkbox" name="Price Range" value="$$$" id="$$$"> <label for="$$$">$$$</label></li>
+              <li><input type="checkbox" name="Price Range" value="$$$$" id="$$$$"> <label for="$$$$">$$$$</label></li>
+            </ol>
+          </fieldset>
+          <fieldset>
+            <legend>Ratings (above)</legend>
+            <ol class="filter-list">
+              <li>
+                <input type="radio" name="rating" value="4" id="aboveFour">
+                <label for="aboveFour">
+                <img src="/img/Icons/bowl rating.png" width="25" height="13" alt="RatingMeasure">
+                </label>
+              </li>
+              <li>
+                <input type="radio" name="rating" value="3" id="aboveThree">
+                <label for="aboveThree">
+                <img src="/img/Icons/bowl rating.png" width="25" height="13" alt="RatingMeasure"><img src="/img/Icons/bowl rating.png" width="25" height="13" alt="RatingMeasure">
+                </label>
+              </li>
+              <li>
+                <input type="radio" name="rating" value="2" id="aboveTwo">
+                <label for="aboveTwo">
+                </span><img src="/img/Icons/bowl rating.png" width="25" height="13" alt="RatingMeasure"><img src="/img/Icons/bowl rating.png" width="25" height="13" alt="RatingMeasure"><img src="/img/Icons/bowl rating.png" width="25" height="13" alt="RatingMeasure"></span>
+                </label>
+              </li>
+              <li>
+                <input type="radio" name="rating" value="1" id="aboveOne">
+                <label for="aboveOne">
+                  <span><img src="/img/Icons/bowl rating.png" width="25" height="13" alt="RatingMeasure"><img src="/img/Icons/bowl rating.png" width="25" height="13" alt="RatingMeasure"><img src="/img/Icons/bowl rating.png" width="25" height="13" alt="RatingMeasure"><img src="/img/Icons/bowl rating.png" width="25" height="13" alt="RatingMeasure"></span>
+                </label>
+              </li>
+              <li>
+                <input type="radio" name="rating" value="1" id="aboveOne">
+                <label for="aboveOne">
+                  <span><img src="/img/Icons/bowl rating.png" width="25" height="13" alt="RatingMeasure"><span><img src="/img/Icons/bowl rating.png" width="25" height="13" alt="RatingMeasure"><img src="/img/Icons/bowl rating.png" width="25" height="13" alt="RatingMeasure"><img src="/img/Icons/bowl rating.png" width="25" height="13" alt="RatingMeasure"><img src="/img/Icons/bowl rating.png" width="25" height="13" alt="RatingMeasure"></span>
+                </label>
+              </li>
+            </ol>
+          </fieldset>
+        </div>
+        <fieldset>
+          <label for="sort">Show</label>
+          <select name="sort" id="sort">
+            <option value="price-high">Price, highest to lowest</option>
+            <option value="price-low">Price, lowest to highest</option>
+            <option value="newest">Newest releases</option>
+          </select>
+        </fieldset>
+      </form>
+
+      <section class="results">
+        <h2 class="subheading">Results</h2>
+
+        <!-- Product 1 -->
+        <article class="product">
+          <header>
+            <img src="/img/Shin black/ShinBlack.jpg" width ="800" height="600" alt="Shin" class="center">
+            <h3>Shin Ramyun Black</h3>
+            <data value="39"><del>$5.00</del> <ins>$3.00</ins></data> <a href="https://www.nongshimusa.com/homev2/our-products/shin-brand/shin-black/">See more</a>
+            <li><p>The most noticeable thing about Shin Ramyun Black is the thick, meaty broth enhanced with garlic and vegetables to ensure that our consumers get the nutrients they need. In addition, red pepper and green onion are added to give Shin Ramyun Black the famous ‘kick’ of Shin Ramyun.</p>
+            <dl>
+              <dt>Rating</dt>
+              <dd>5 <img src="/img/Icons/bowl rating.png" width="25" height="13" alt="RatingMeasure"><img src="/img/Icons/bowl rating.png" width="25" height="13" alt="RatingMeasure"><img src="/img/Icons/bowl rating.png" width="25" height="13" alt="RatingMeasure"><img src="/img/Icons/bowl rating.png" width="25" height="13" alt="RatingMeasure"><img src="/img/Icons/bowl rating.png" width="25" height="13" alt="RatingMeasure"></dd>
+            </dl>
+        </header>
+          <footer>
+            <ul class="flex-container">
+              <button type="button"><img src="img/Icons/Shopping cart.png" width ="30" height="20" alt="AddToCard"> Add to Cart</button>
+              <button type="button"><img src="img/Icons/Heart.png" width ="30" height="20" alt="AddToCard"></button>
+            </ul>
+          </footer>
+        </article>
+
+        <!-- Product 2 -->
+        <article class="product">
+          <header>
+            <img src="img/Chapagetti/Chapagetti.jpg" width ="800" height="600" alt="Product Image" class="center">
+            <h3>Chapagetti</h3>
+            <data value="39"><del>$7.00</del> <ins>$3.50</ins></data> <a href="https://www.nongshimusa.com/homev2/our-products/meal-noodle/chapagetti-2/">See more</a>
+            <p>Chapagetti is Nongshim’s version of the Chajangmyun Noodles, an immensly popular noodle dish in Korea. Nongshim spent years developing and tweaking the secret Chajang recipe until it tasted just like the common Chajangmyun shops found all over Korea. </p>
+            <dl>
+              <dt>Rating</dt>
+              <dd>4.5 <img src="/img/Icons/bowl rating.png" width="25" height="13" alt="RatingMeasure"><img src="/img/Icons/bowl rating.png" width="25" height="13" alt="RatingMeasure"><img src="/img/Icons/bowl rating.png" width="25" height="13" alt="RatingMeasure"><img src="/img/Icons/bowl rating.png" width="25" height="13" alt="RatingMeasure"><img src="/img/Icons/bowl rating HALF.png" width="13" height="7" alt="RatingMeasure"></dd>
+            </dl>
+           </header>
+          <footer>
+            <ul class="flex-container">
+              <button type="button"><img src="img/Icons/Shopping cart.png" width ="30" height="20" alt="AddToCard"> Add to Cart</button>
+              <button type="button"><img src="img/Icons/Heart.png" width ="30" height="20" alt="AddToCard"></button>
+              </ul>
+          </footer>
+        </article>
+
+        <!-- Product 3 -->
+        <article class="product">
+          <header>
+            <img src="img/BowlNoodle/Bowl Noodle.jpg" width ="800" height="600" alt="Product Image" class="center">
+            <h3>Bowl Noodle Soup</h3>
+            <data value="39"><del>$8.00</del> <ins>$4.00</ins></data> <a href="https://www.nongshimusa.com/homev2/bowl-noodle/hot-spicy-bowl/">See more</a>
+            <p>This Spicy Bowl Noodle will tingle your taste buds because it is made from delicious beef broth. It contains a variety of vegetables and spices, and its flavor was derived from a traditional Korean dish that is reportedly good for the mind, body, and soul.</p>
+            <dl>
+              <dt>Rating</dt>
+              <dd>4.4 <img src="/img/Icons/bowl rating.png" width="25" height="13" alt="RatingMeasure"><img src="/img/Icons/bowl rating.png" width="25" height="13" alt="RatingMeasure"><img src="/img/Icons/bowl rating.png" width="25" height="13" alt="RatingMeasure"><img src="/img/Icons/bowl rating.png" width="25" height="13" alt="RatingMeasure"><img src="/img/Icons/bowl rating HALF.png" width="13" height="7" alt="RatingMeasure"></dd>
+            </dl>
+            
+          </header>
+          <footer>
+            <ul class="flex-container">
+              <button type="button"><img src="img/Icons/Shopping cart.png" width ="30" height="20" alt="AddToCard"> Add to Cart</button>
+              <button type="button"><img src="img/Icons/Heart.png" width ="30" height="20" alt="AddToCard"></button>
+              </ul>
+          </footer>
+        </article>
+  
+        <!-- Product 4 -->
+        <article class="product">
+          <header>
+            <img src="img/la mian.jpg" width ="800" height="600" alt="Product Image" class="center">
+            <h3>Laksa La Mian</h3>
+            <data value="39"><del>$6.00</del> <ins>$3.00</ins></data> <a href="https://www.primataste.com/shop-online/laksa-lamian.html">See more</a>
+            <p>Experience authentic Singaporean Laksa; a multicultural blend of herbs and spices, simmered together in a delightful coconut gravy that will bring a smile to your face. </p>
+            <dl>
+              <dt>Rating</dt>
+              <dd>4 <img src="/img/Icons/bowl rating.png" width="25" height="13" alt="RatingMeasure"><img src="/img/Icons/bowl rating.png" width="25" height="13" alt="RatingMeasure"><img src="/img/Icons/bowl rating.png" width="25" height="13" alt="RatingMeasure"><img src="/img/Icons/bowl rating.png" width="25" height="13" alt="RatingMeasure"></dd>
+            </dl>
+            
+          </header>
+          <footer>
+            <ul class="flex-container">
+              <button type="button"><img src="img/Icons/Shopping cart.png" width ="30" height="20" alt="AddToCard"> Add to Cart</button>
+              <button type="button"><img src="img/Icons/Heart.png" width ="30" height="20" alt="AddToCard"></button>
+              </ul>
+          </footer>
+        </article>
+
+        <!-- Product 5 -->
+        <article class="product">
+          <header>
+            <img src="img/Top ramen.jpg" width ="800" height="600" alt="Product Image" class="center">
+            <h3>Top Ramen </h3>
+            <data value="39"><del>$4.00</del> <ins>$2.00</ins></data> <a href="https://nissinfoods.com/products/top-ramen-noodles">See more</a>
+            <p>Delicious as is or tossed with your favorite ingredients, Top Ramen® is always a simple pleasure. With reduced sodium content and no added MSG, the great taste you love has been stripped down to its essential noodle goodness. Even vegetarians can enjoy our Soy Sauce and Chili flavors with their favorite toppings.</p>
+            <dl>
+              <dt>Rating</dt>
+              <dd>4.5 <img src="/img/Icons/bowl rating.png" width="25" height="13" alt="RatingMeasure"><img src="/img/Icons/bowl rating.png" width="25" height="13" alt="RatingMeasure"><img src="/img/Icons/bowl rating.png" width="25" height="13" alt="RatingMeasure"><img src="/img/Icons/bowl rating.png" width="25" height="13" alt="RatingMeasure"><img src="/img/Icons/bowl rating HALF.png" width="13" height="7" alt="RatingMeasure"></dd>
+            </dl>
+            
+          </header>
+          <footer>
+            <ul class="flex-container">
+              <button type="button"><img src="img/Icons/Shopping cart.png" width ="30" height="20" alt="AddToCard"> Add to Cart</button>
+              <button type="button"><img src="img/Icons/Heart.png" width ="30" height="20" alt="AddToCard"></button>
+              </ul>
+          </footer>
+        </article>
+
+        <!-- Product 6 -->
+        <article class="product">
+          <header>
+            <img src="img/Nissin chk rmen.jpg" width ="800" height="600" alt="Product Image" class="center">
+            <h3>Top Ramen (Old Style)</h3>
+            <data value="39"><del>$6.00</del> <ins>$3.00</ins></data> <a href="https://en.wikipedia.org/wiki/Nissin_Chikin_Ramen">See more</a>
+            <p>Produced by Nissin Foods in 1958, Chicken Ramen is the world's first instant noodles. Delicious broth made with Japanese chicken and vegetables. Long-selling product loved by many generations for more than 60 years.
+            </p>
+            <dl>
+              <dt>Rating</dt>
+              <dd>5 <img src="/img/Icons/bowl rating.png" width="25" height="13" alt="RatingMeasure"><img src="/img/Icons/bowl rating.png" width="25" height="13" alt="RatingMeasure"><img src="/img/Icons/bowl rating.png" width="25" height="13" alt="RatingMeasure"><img src="/img/Icons/bowl rating.png" width="25" height="13" alt="RatingMeasure"><img src="/img/Icons/bowl rating.png" width="25" height="13" alt="RatingMeasure"></dd>
+            </dl>
+            
+          </header>
+          <footer>
+              <ul class="flex-container">
+              <button type="button"><img src="img/Icons/Shopping cart.png" width ="30" height="20" alt="AddToCard"> Add to Cart</button>
+              <button type="button"><img src="img/Icons/Heart.png" width ="30" height="20" alt="AddToCard"></button>
+              </ul>
+          </footer>
+        </article>
+      </section>
+    </main>
+
+    <footer class="page-footer">
+      <ul class="social">
+        <span class="flex-item"><a href="https://www.facebook.com/"><img src="img\Icons\facebook.jpg" width ="50" height="25" alt="FacebookSM"> Facebook</a></span>
+        <span><a href="https://www.instagram.com/"><img src="img\Icons\insta.jpg" width ="50" height="25" alt="InstagramSM"> Instagram</a></span>
+        <span><a href="https://twitter.com/"><img src="img\Icons\Twitter.jpg" width ="50" height="25" alt="Twittersm"> Twitter</a></span>
+      </ul>
+      <nav aria-label="Legal">
+        <ul class="legal">
+          <span><a href="https://youtu.be/dQw4w9WgXcQ">Terms of Use</a></span>
+          <span><a href="https://youtu.be/dQw4w9WgXcQ">Privacy Policy</a></span>
+          <span><a href="https://youtu.be/dQw4w9WgXcQ">Accessibility Policy</a></span>
+        </ul>
+      </nav>
+      <p class="copyright">&copy; Copyright TheBowl, 2020.</p>
+    </footer>
+
+  </body>
+</html>
